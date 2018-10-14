@@ -82,7 +82,8 @@ int max_of_three(int a, int b, int c) {
 * @param unsigned int n : the integer we perform unsigned operations on
 *        - because of differences is compiler's implementation,
 *            it is the safest to do byte operations only on unsigned integers
-* - it is important to notice that right shifting an odd integer will perform a 'div' operation, not an exact division*/
+* - it is important to notice that right shifting an odd integer will perform a 'div' operation, not an exact division
+*/
 void show_bytes_operations(unsigned int n) {
     printf("%d * 8 = %d \n",n, n << 3 );
     printf("%d / 4 = %d \n",n, n >> 2 );
