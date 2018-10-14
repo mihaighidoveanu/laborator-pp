@@ -1,0 +1,7 @@
+# Codeblocks stuff
+bin/
+obj/
+*.cbp
+*.depend
+*.layout
+
