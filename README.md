@@ -1,7 +1,7 @@
 # Procedural Programming 2018-2019
 
 ## Solved labs
-1. [Scanf, printf and bitwise operators](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab1)
+1. [Structs, scanf, printf and bitwise operators](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab1)
 2. ... 
 
 ## Courseware

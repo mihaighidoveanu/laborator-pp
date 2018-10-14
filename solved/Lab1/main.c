@@ -29,17 +29,17 @@ typedef struct Solutie Solutie;
 */
 void print_equation(float a, float b, float c){
     if(a != 1)
-        printf("%.1fx^2 ",a);
+        printf("%+.1f * x^2 ",a);
     else
         printf("x^2 ");
     if(b < 0)
-        printf(" %.1fx ", b);
+        printf("%.1fx ", b);
     else
-        printf(" + %.1fx ", b);
+        printf("+ %.1f * x ", b);
     if(c < 0)
-        printf(" %.1f ", c);
+        printf("%.1f ", c);
     else
-        printf(" + %.1f ", c);
+        printf("+ %.1f ", c);
     printf(" = 0\n");
 }
 
