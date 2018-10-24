@@ -6,7 +6,7 @@ Feedback me with any inconvenvies and desires for the labs. Better now than at t
 https://docs.google.com/document/d/158MelhPC-H6riBaPW2VTjsVC4b2Xtv7O36CMjTGmokk/edit?usp=sharing
 
 ## Coding style
-> "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live" - Programmer Quote
+> "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live"
 
 Using an autoformatter will give you insight into how your code should look.
 
@@ -29,7 +29,7 @@ Using an autoformatter will give you insight into how your code should look.
 	Pay attention to check C reference for this course, not C++ reference([https://en.cppreference.com/w](https://en.cppreference.com/w))
 
 ## MOSS link - Measure of Software Similarity
-> "If cheating on projects becomes harder than doing the project itself, why bother ?" - Anonymous Quote
+> "If cheating on projects becomes harder than doing the project itself, why bother ?"
 
 [This program](https://theory.stanford.edu/~aiken/moss/) was created by Standford and is very probable to be used on your projects to check for plagiarism.
 
