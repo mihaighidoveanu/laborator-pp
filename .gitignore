@@ -4,4 +4,6 @@ obj/
 *.cbp
 *.depend
 *.layout
+# todos and notes
+todo.md
 
