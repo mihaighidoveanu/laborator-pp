@@ -7,7 +7,9 @@ https://docs.google.com/document/d/158MelhPC-H6riBaPW2VTjsVC4b2Xtv7O36CMjTGmokk/
 
 ## Coding style
 > "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live" - Programmer Quote
+
 Using an autoformatter will give you insight into how your code should look.
+
 + Skim this : [C Coding Standard](https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html)
 + See [Codeblocks settings](https://github.com/Mihaaai/laborator-pp/tree/master/codeblocks/) on how to enable autoformatter
 + [Online autoformatter](https://codebeautify.org/c-formatter-beautifier)
@@ -28,5 +30,6 @@ Using an autoformatter will give you insight into how your code should look.
 
 ## MOSS link - Measure of Software Similarity
 > "If cheating on projects becomes harder than doing the project itself, why bother ?" - Anonymous Quote
+
 [This program](https://theory.stanford.edu/~aiken/moss/) was created by Standford and is very probable to be used on your projects to check for plagiarism.
 
