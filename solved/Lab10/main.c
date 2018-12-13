@@ -133,9 +133,14 @@ int main()
     // ex. 3
     int rows;
     int** m = new_bdim("siruri.txt", &rows);
+    printf("Original : \n");
     print_bdim(m, rows);
+    printf("\nSorted : \n");
     sort_bdim(m, rows);
     print_bdim(m, rows);
+
+    // test that our merge works on two arrays
+    printf("Testing our merge function :\n");
     int* a = malloc(sizeof(int) * 4);
     if(a == NULL){
         return 0;
@@ -152,13 +157,22 @@ int main()
     for(int i = 0; i < 8; ++i){
         printf("%d ",a[i]);
     }
+    printf("\n\n");
 
-    /* This doesn't work completely for now
-    merge_rows(m, rows);
-    for(int i = 1; i < m[0][0]; ++i){
-        printf("%d ",m[0][i]);
+    printf("Running merge on our matrix\n");
+    merge_rows(m, &rows);
+
+    printf("Our merged matrix : \n");
+    print_bdim(m, rows);
+
+    // append the result to the text file
+    FILE *fout = fopen("siruri.txt", "a");
+    for(int i = 1; i <= m[0][0]; ++i){
+        fprintf(fout, "%d ", m[0][i]);
     }
-    */
+    fclose(fout);
+
+    // free the matrix !!!
     free_bdim(m, rows);
     return 0;
 }

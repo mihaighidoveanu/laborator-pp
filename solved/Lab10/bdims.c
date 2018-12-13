@@ -45,8 +45,8 @@ int** new_bdim(const char* filename, int* rows){
             }
             // and assign the new pointers to the old matrix lines
             /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            // that's how we add more lines and keep the same memory for the elements
             for(int i = 0; i < no_rows; ++i){
+            // that's how we add more lines and keep the same memory for the elements
                 new_m[i] = m[i];
             }
             // update the variable holding the number of lines
@@ -85,6 +85,9 @@ int** new_bdim(const char* filename, int* rows){
     }
     // output the number of rows through the rows parameter
     (*rows) = current_row;
+
+    //close the file
+    fclose(fin);
 
     // return the matrix
     return m;
@@ -222,13 +225,14 @@ void merge_arrays(int** a, int m, int* b, int n){
 
 
 // this doesn't work completely for now
-void merge_rows(int** m, int rows){
+void merge_rows(int** m, int* rows){
     int* first_row = m[0] + 1;
-    for(int i = 1; i < rows; ++i){
+    for(int i = 1; i < (*rows); ++i){
         int* row = m[i] + 1;
         merge_arrays(&first_row, m[0][0], row, m[i][0]);
         m[0][0] += m[i][0];
-        printf("After %d merge - %d elements \n", i, m[0][0]);
+        // debugging messages
+        printf("After %d merge - %d elements on the first line \n", i, m[0][0]);
         for(int i = 0; i < m[0][0]; ++i){
             printf("%d ", first_row[i]);
         }
@@ -243,4 +247,8 @@ void merge_rows(int** m, int rows){
     m[0][0] = new_row_size;
     memcpy(m[0] + 1, first_row, sizeof(int) * new_row_size);
     free(first_row);
+    (*rows) = 1;
+
+
+
 }
