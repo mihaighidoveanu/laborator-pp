@@ -36,25 +36,10 @@ int** new_bdim(const char* filename, int* rows){
         //          it exceeded the available index because arrays are indexed from 0.
         //          So we need to add some more lines.
         if(current_row > no_rows - 1){
-            // create a new matrix with double the number of lines
-            // remember that our matrix is an array of pointers
-            int** new_m = malloc(sizeof(int*) * no_rows * 2 );
-            //check if raellocation succeeded
-            if(new_m == NULL){
-                break;
-            }
-            // and assign the new pointers to the old matrix lines
-            /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            for(int i = 0; i < no_rows; ++i){
-            // that's how we add more lines and keep the same memory for the elements
-                new_m[i] = m[i];
-            }
-            // update the variable holding the number of lines
+            // reallocate the number of lines for the matrix
+            // realloc will make sure we still have the old lines in the reallocated m
+            m = realloc(m, sizeof(int*) * no_rows * 2);
             no_rows *= 2;
-            // free the old array of pointers to lines
-            free(m);
-            // give the new array of pointers to lines the same old name m
-            m = new_m;
         }
         // for the current row,
         //      allocate the number of columns + 1 (+ 1 for inserting the line size)
