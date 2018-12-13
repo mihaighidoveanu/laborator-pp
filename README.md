@@ -34,8 +34,8 @@ Using an autoformatter will give you insight into how your code should look.
 5. [Arrays and matrices](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab5)
 6. [Text and binary files](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab6)
 7. [Recapitulare ](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab7)
-8. ...
-9. ...
+8. [Pointeri ](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab8)
+9. [Recapitulare ](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab9)
 10. [Matrici alocate dinamic](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab10)
 
 ## Courseware
