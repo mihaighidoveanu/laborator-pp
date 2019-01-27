@@ -1,7 +1,7 @@
 # Procedural Programming 2018-2019 
 [mihai.ghidoveanu@gmail.com](mailto:mihai.ghidoveanu@gmail.com)
 
-##Good luck at the exam ! 
+## Good luck at the exam ! 
 
 ## Solved labs and answering questions from during the labs
 1. [Structs, scanf, printf and bitwise operators](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab1)
