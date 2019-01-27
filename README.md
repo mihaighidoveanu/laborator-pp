@@ -1,7 +1,10 @@
 # Procedural Programming 2018-2019 
 [mihai.ghidoveanu@gmail.com](mailto:mihai.ghidoveanu@gmail.com)
 
-## Good luck at the exam ! 
+## Courseware
+
+[2018-2019 Labs](https://github.com/Mihaaai/laborator-pp/tree/master/labs)
+[2018-2019 Courses](https://github.com/Mihaaai/laborator-pp/tree/master/courses)
 
 ## Solved labs and answering questions from during the labs
 1. [Structs, scanf, printf and bitwise operators](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab1)
@@ -17,8 +20,7 @@
 11. [Siruri de caractere](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab11)
 12. [Functii cu numar variabil de argumente. Programare generica.](https://github.com/Mihaaai/laborator-pp/tree/master/solved/Lab12)
 
-## Courseware
-[2018-2019](https://github.com/Mihaaai/laborator-pp/tree/master/labs)
+
 
 ## Useful links
 * C Reference: [https://en.cppreference.com/w/c](https://en.cppreference.com/w/c)
